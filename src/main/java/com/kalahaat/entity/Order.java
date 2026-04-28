@@ -28,7 +28,7 @@ public class Order {
     @Column(name = "paymentMethod", nullable = false)
     private String paymentMethod;
 
-    @Column(columnDefinition = "ENUM('Pending Payment', 'Processing', 'Confirmed', 'Shipped', 'Delivered', 'Cancelled') DEFAULT 'Processing'")
+    @Column
     private String status;
 
     @Column(name = "razorpayOrderId")

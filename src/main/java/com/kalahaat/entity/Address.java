@@ -34,7 +34,7 @@ public class Address {
     @Column(nullable = false)
     private String pin;
 
-    @Column(columnDefinition = "ENUM('home', 'work') DEFAULT 'home'")
+    @Column
     private String type;
 
     @Column(columnDefinition = "BOOLEAN DEFAULT false")

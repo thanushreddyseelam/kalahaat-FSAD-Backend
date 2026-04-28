@@ -20,7 +20,7 @@ public class Transaction {
     @Column(nullable = false, precision = 10, scale = 2)
     private BigDecimal amount;
 
-    @Column(name = "paymentStatus", columnDefinition = "ENUM('Pending', 'Completed', 'Failed') DEFAULT 'Pending'")
+    @Column(name = "paymentStatus")
     private String paymentStatus;
 
     @Column(name = "paymentGateway", columnDefinition = "VARCHAR(255) DEFAULT 'Stripe'")

@@ -53,13 +53,13 @@ public class Product {
     @Column(columnDefinition = "INTEGER DEFAULT 10")
     private Integer stock;
 
-    @Column(name = "bg", columnDefinition = "VARCHAR(255) DEFAULT '#F5EDD6'")
+    @Column
     private String bg;
 
-    @Column(name = "emoji", columnDefinition = "VARCHAR(255) DEFAULT ''")
+    @Column
     private String emoji;
 
-    @Column(name = "verificationStatus", columnDefinition = "ENUM('pending', 'approved', 'rejected') DEFAULT 'approved'")
+    @Column
     private String verificationStatus;
 
     @Column(name = "verificationNotes", columnDefinition = "TEXT")
